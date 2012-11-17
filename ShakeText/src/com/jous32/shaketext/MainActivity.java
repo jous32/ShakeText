@@ -8,6 +8,7 @@ import android.app.PendingIntent;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
@@ -69,7 +70,7 @@ public class MainActivity extends Activity implements TextWatcher {
 	      public void onShake() {
 	    	  if(contactNumber != null && message !=null ){
 	    		  sendSMS(contactNumber, message);
-	    		  Toast.makeText(MainActivity.this, "Mensaje enviado!", Toast.LENGTH_SHORT).show();
+	    		  Toast.makeText(MainActivity.this, getResources().getString(R.string.message_send), Toast.LENGTH_SHORT).show();
 	    	  }
 	       
 	      }

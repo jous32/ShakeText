@@ -34,6 +34,7 @@ public final class R {
         public static final int hello_world=0x7f040001;
         public static final int menu_settings=0x7f040002;
         public static final int message=0x7f040004;
+        public static final int message_send=0x7f040006;
         public static final int save=0x7f040005;
     }
     public static final class style {
